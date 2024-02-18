@@ -59,6 +59,7 @@ body {
   background-position: center;
   padding: 3rem 6rem;
   position: relative;
+  display: inline-block;
 }
 .left-side .char{
   position: absolute;
@@ -213,4 +214,40 @@ form p {
 .social-icons a:hover {
   transform: scale(1.1);
   border: 1px solid rgba(156, 156, 156, 0.619);
+}
+
+@media screen and (max-width: 768px){
+  
+  .left-side .char {
+    height: 480px;
+    width: 480px;
+    transform: rotate(-10deg);
+    right: -24%;
+}
+.left-side .cloud1,
+.left-side .cloud2 {
+  height: 100px;
+}
+.signup-form{
+  width: 130%;
+}
+.right-side h2{
+  font-size: 2.5rem;
+}
+.fa-brands{
+  font-size: 1.3rem;
+}
+}
+
+@media screen and (max-width: 450px){
+  
+  .left-side{
+    display: none;
+}
+.right-side {
+  padding: 3rem;
+}
+.signup-form {
+  width: 100%;
+}
 }
